@@ -77,7 +77,8 @@
           >
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
           </svg>
-          <a href="tel:9798714308" target="_blank">
+
+          <a href="https://wa.me/+919798714308" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -149,63 +150,23 @@
               Raunak Mishra
             </h1>
             <p
-              class="pointer-events-none text-[13px] font-[Merriweather] italic mb-6 mt-2"
+              class="animated-text pointer-events-none text-[13px] font-[Merriweather] italic mb-6 mt-2"
             >
               Software Developer
             </p>
-            <div
-              class="flex items-center relative cursor-pointer transition-transform duration-200 ease-in-out hover:scale-102 group"
-            >
+            <div class="flex items-center relative group">
               <button
-                class="bg-[#4595eb] py-[8px] px-[15px] rounded-lg text-[13px] lg:text-[16px] font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6]"
+                class="bg-[#4595eb] py-[8px] px-[15px] rounded-lg text-[13px] lg:text-[16px] font-extrabold bg-gradient-to-l from-[#01181e] to-[#1f2667e6] cursor-pointer transition-transform duration-200 ease-in-out hover:scale-102 text-white hover:text-lime-300"
                 @click="HandleClick"
               >
-                About Me
+                About Me ➡
               </button>
-              <svg
-                class="absolute left-17 top-0 lg:left-21 lg:top-1 group-hover:left-18 lg:group-hover:left-22"
-                xmlns:dc="http://purl.org/dc/elements/1.1/"
-                xmlns:cc="http://creativecommons.org/ns#"
-                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                xmlns:svg="http://www.w3.org/2000/svg"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                version="1.1"
-                x="0px"
-                y="0px"
-                width="44"
-                height="44"
-                viewBox="0 0 100 125"
+              <button
+                class="bg-[#4595eb] py-[8px] px-[15px] rounded-lg text-[15px] lg:text-[16px] font-extrabold bg-gradient-to-l from-[#01181e] to-[#1f2667e6] ml-6 cursor-pointer transition-transform duration-200 ease-in-out hover:scale-102 text-white hover:text-lime-300"
+                @click="HandleClick1"
               >
-                <g transform="translate(0,-952.36218)">
-                  <path
-                    style="
-                      text-indent: 0;
-                      text-transform: none;
-                      direction: ltr;
-                      block-progression: tb;
-                      baseline-shift: baseline;
-                      color: #000000;
-                      enable-background: accumulate;
-                    "
-                    d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
-                    fill="#fff"
-                    fill-opacity="1"
-                    stroke="white"
-                    stroke-width="2"
-                    marker="none"
-                    visibility="visible"
-                    display="inline"
-                    overflow="visible"
-                  />
-                </g>
-                <copyleaks-sidebar-popup
-                  xmlns=""
-                  id="copyleaks-sidebar-popup-container"
-                  class="no-print"
-                />
-              </svg>
+                Resume ➡
+              </button>
             </div>
           </div>
         </div>
@@ -312,11 +273,12 @@
         </ul>
       </div>
       <div class="flex justify-center items-center relative mt-25">
-        <button
+        <a
+          href="#latestwork"
           class="bg-[#4595eb] py-[8px] px-[15px] rounded-lg text-[13px] lg:text-[16px] font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] cursor-pointer transition-transform duration-100 ease-in-out hover:scale-110"
         >
           Latest Work
-        </button>
+        </a>
         <svg
           class="absolute top-8 transition-transform duration-200 hover:translate-y-2"
           xmlns="http://www.w3.org/2000/svg"
@@ -337,30 +299,41 @@
     </section>
     <section
       v-if="flag"
-      class="z-1000 color-white bg-[#111] my-20 mx-auto max-w-[1100px] overflow-hidden absolute top-0"
+      class="z-100 color-white bg-[#111] my-20 mx-auto max-w-[1100px] overflow-x-hidden absolute top-0"
     >
       <span
         @click="this.flag = false"
-        class="border-2 border-gray-300 py-1 px-2 rounded-[50%] absolute right-10 top-10 text-[10px] font-light cursor-pointer"
+        class="border-2 border-gray-300 py-1 px-2 rounded-[50%] absolute right-10 top-10 text-[10px] font-light cursor-pointer hover:text-red-600 hover:border-red-500"
         >X</span
       >
-      <div id="container" class="flex flex-col lg:px-60 lg:py-20 lg:flex-row">
+      <div
+        id="container"
+        class="flex flex-col lg:px-45 lg:py-20 lg:flex-row overflow-x-hidden"
+      >
         <div
-          class="flex flex-col lg:max-w-[70%] justify-center items-center px-15 py-10 lg:py-0 lg:px-0"
+          class="flex flex-col lg:w-full justify-center items-center px-15 py-10 lg:py-0 lg:px-0"
         >
-          <h1 class="text-3xl font-bold text-blue-400 mb-4 w-full">ABOUT ME</h1>
-          <p class="text-start">
-            Software Developer at Zeta , top 2% coder globally on LeetCode
-            (Knight rank) with Rating 2000+. Proficient in DBMS, OS,
-            OOPs,Computer Networks. Skilled in full-stack development using
-            React, Vue, Node.js, MongoDB and Express
+          <h1 class="text-3xl font-bold text-blue-400 mb-4 w-full">
+            ABOUT <span class="text-orange-500">ME</span>
+          </h1>
+          <p class="text-start w-full">
+            Software Developer at
+            <span class="text-orange-600 text-center">Zeta</span> ,Graduated
+            from <span class="text-blue-500">NIT Patna</span> (ECE, 2024) with a
+            strong focus on problem-solving and emerging technologies. Among top
+            <span class="text-green-500">2%</span> coder globally on LeetCode
+            (<span class="text-yellow-400">Knight</span>) with Rating
+            <span class="text-green-500">2000+</span> . Proficient in DBMS, OS,
+            OOPs, Computer Networks. Skilled in full-stack development using
+            React, Vue, Node.js, MongoDB and Express.
           </p>
-          <ul class="flex gap-2 lg:gap-4 flex-wrap mt-10">
-            <li class="border-1 border-gray-400 px-3 py-1 rounded-2xl">
-              #javascript
-            </li>
+          <ul class="flex gap-2 lg:gap-4 flex-wrap mt-10 lg:mt-6">
+            <li class="border-1 border-gray-400 px-3 py-1 rounded-2xl">#c++</li>
             <li class="border-1 border-gray-400 px-3 py-1 rounded-2xl">
               #react.js
+            </li>
+            <li class="border-1 border-gray-400 px-3 py-1 rounded-2xl">
+              #javascript
             </li>
             <li class="border-1 border-gray-400 px-3 py-1 rounded-2xl">
               #redux
@@ -374,7 +347,7 @@
             <li class="border-1 border-gray-400 px-3 py-1 rounded-2xl">
               #mongoDB
             </li>
-            <li class="border-1 border-gray-400 px-3 py-1 rounded-2xl">#Vue</li>
+            <li class="border-1 border-gray-400 px-3 py-1 rounded-2xl">#vue</li>
             <li class="border-1 border-gray-400 px-3 py-1 rounded-2xl">
               #tailwind
             </li>
@@ -385,10 +358,10 @@
             <li class="border-1 border-gray-400 px-3 py-1 rounded-2xl">#sql</li>
           </ul>
         </div>
-        <div class="lg:max-w-[30%] -mt-10 lg:mt-0">
+        <div class="lg:max-w-[40%] -mt-15 lg:mt-0 flex justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="500"
+            width="300"
             height="300"
             viewBox="0 0 900 600"
             fill="none"
@@ -1035,10 +1008,442 @@
         </div>
       </div>
     </section>
+    <section
+      id="latestwork"
+      class="max-w-screen-xl mx-auto px-4 bg-[#111] overflow-hidden relative pb-15"
+    >
+      <h2
+        class="z-10 bg-inherit relative text-[40px] font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] border-b-2 border-[#1788ae]"
+      >
+        Latest Works
+      </h2>
+      <div
+        class="flex flex-col lg:flex-row gap-[80px] items-center mt-12 relative"
+      >
+        <div
+          class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden lg:block"
+        ></div>
+        <div
+          class="bg-[#111] z-10 w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 hover:scale-115 ease-in-out duration-100 cursor-pointer hidden lg:block"
+        ></div>
+        <div class="lg:w-full z-10">
+          <a
+            href="https://bookbazaar-v45b.onrender.com/"
+            target="_blank"
+            class="z-10 w-full group transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:scale-105"
+          >
+            <span
+              class="visit-site bg-amber-500 items-center gap-2 justify-center rounded w-max px-4 py-1 absolute -top-8 left-55 lg:-top-4 lg:left-35 flex opacity-0 group-hover:opacity-100 lg:group-hover:-top-8 ease-in-out duration-200 after:content-[''] after:w-4 after:h-4 after:bg-inherit after:absolute after:rotate-45 after:-bottom-[8px]"
+              >BookBazaar
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+
+            <img
+              class="max-w-[400px] mr-auto"
+              src="../assets/images/Bookbazar.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="max-w-[500px] lg:w-full flex flex-col justify-center items-center"
+        >
+          <h3 class="text-[#fc815c] font-bold text-4xl">BookBazaar</h3>
+          <span class="text-[#fc815c] text-lg">(E-commerce)</span>
+          <p class="text-justify mt-2">
+            A full-stack e-commerce platform with user authentication,
+            authorization, and an admin panel for efficient management.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #react.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #express.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #node.js
+            </li>
+
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #mongoDB
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #mongoose
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #css
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #javascript
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col-reverse gap-[80px] items-center mt-12 relative lg:flex-row"
+      >
+        <div
+          class="lg:w-full max-w-[500px] justify-center items-center text-center"
+        >
+          <h3 class="text-blue-400 font-bold text-4xl">Codepulse</h3>
+          <span class="text-blue-400 text-lg">(Git & Leetcode Integrated)</span>
+          <p class="text-justify mt-2">
+            Developed a web app displaying real-time Leetcode and GitHub
+            statistics, attracting 100+ users in two weeks. Integrated GitHub
+            API to showcase repository data.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #react.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #tailwind
+            </li>
+
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #css
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #javascript
+            </li>
+          </ul>
+        </div>
+        <div
+          class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden lg:block"
+        ></div>
+        <div
+          class="bg-[#111] z-10 w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 hover:scale-115 ease-in-out duration-100 cursor-pointer hidden lg:block"
+        ></div>
+        <div class="lg:w-full z-20">
+          <a
+            href="https://soft-puffpuff-0a989c.netlify.app/"
+            target="_blank"
+            class="z-10 w-full group transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:scale-105"
+          >
+            <span
+              class="visit-site bg-blue-500 items-center gap-2 justify-center rounded w-max px-3 py-1 absolute right-55 -top-3 lg:-top-4 lg:right-35 group-hover:-top-9 md:lg:group-hover:-top-10 opacity-0 group-hover:opacity-100 ease-in-out duration-200 after:content-[''] after:w-4 after:h-4 after:bg-inherit flex after:absolute after:rotate-45 after:-bottom-[8px] text-white"
+              >Codepulse
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+
+            <img
+              class="max-w-[400px] ml-auto"
+              src="../assets/images/Codepulse.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col lg:flex-row gap-[80px] items-center mt-12 relative"
+      >
+        <div
+          class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden lg:block"
+        ></div>
+        <div
+          class="bg-[#111] z-10 w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 hover:scale-115 ease-in-out duration-100 cursor-pointer hidden lg:block"
+        ></div>
+        <div class="lg:w-full z-10">
+          <a
+            href="https://thunderous-dragon-d473c2.netlify.app/"
+            target="_blank"
+            class="z-10 w-full group transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:scale-105"
+          >
+            <span
+              class="visit-site bg-red-400 items-center gap-2 justify-center rounded w-max px-4 py-1 absolute -top-8 left-42 lg:-top-4 lg:left-26 flex opacity-0 group-hover:opacity-100 lg:group-hover:-top-8 ease-in-out duration-200 after:content-[''] after:w-4 after:h-4 after:bg-inherit after:absolute after:rotate-45 after:-bottom-[8px]"
+              >Development courses
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+
+            <img
+              class="max-w-[400px] mr-auto"
+              src="../assets/images/DevCourse.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="max-w-[500px] lg:w-full flex flex-col justify-center items-center"
+        >
+          <h3 class="text-red-500 font-bold text-4xl">Development courses</h3>
+          <span class="text-red-500 text-lg">(Personal)</span>
+          <p class="text-justify mt-2">
+            A fully responsive single page website built with Tailwind CSS,
+            featuring smooth animations, a flexible grid layout, and interactive
+            elements for an engaging user experience.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #react.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #express.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #node.js
+            </li>
+
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #mongoDB
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #mongoose
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #css
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #javascript
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col-reverse gap-[80px] items-center mt-12 relative lg:flex-row"
+      >
+        <div
+          class="lg:w-full max-w-[500px] justify-center items-center text-center"
+        >
+          <h3 class="text-pink-500 font-bold text-4xl">Shoe-Company</h3>
+          <span class="text-pink-500 text-lg">(web-app)</span>
+          <p class="text-justify mt-2">
+            A fully responsive shoe company website using Tailwind CSS with
+            sections for Home, About, Products, Testimonials, and Contact.
+            Showcases collections, brand story, customer reviews, and a contact
+            form for seamless user interaction.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #javascript
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #tailwind
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #html
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #css
+            </li>
+          </ul>
+        </div>
+        <div
+          class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden lg:block"
+        ></div>
+        <div
+          class="bg-[#111] z-10 w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 hover:scale-115 ease-in-out duration-100 cursor-pointer hidden lg:block"
+        ></div>
+        <div class="lg:w-full z-100">
+          <a
+            href="https://effortless-kitsune-0ec440.netlify.app/#"
+            target="_blank"
+            class="z-10 w-full group transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:scale-105"
+          >
+            <span
+              class="visit-site bg-pink-500 items-center gap-2 justify-center rounded w-max px-3 py-1 absolute right-55 -top-3 lg:-top-4 lg:right-35 group-hover:-top-9 md:lg:group-hover:-top-10 opacity-0 group-hover:opacity-100 ease-in-out duration-200 after:content-[''] after:w-4 after:h-4 after:bg-inherit flex after:absolute after:rotate-45 after:-bottom-[8px]"
+              >Shoe-Company
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+
+            <img
+              class="max-w-[400px] ml-auto"
+              src="../assets/images/Shoe.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row gap-[80px] items-center mt-12 relative"
+      >
+        <div
+          class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden lg:block"
+        ></div>
+        <div
+          class="bg-[#111] z-10 w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 hover:scale-115 ease-in-out duration-100 cursor-pointer hidden lg:block"
+        ></div>
+        <div class="lg:w-full z-10">
+          <a
+            href="https://raunakjr.github.io/Projects/"
+            target="_blank"
+            class="z-10 w-full group transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:scale-105"
+          >
+            <span
+              class="visit-site bg-lime-300 items-center gap-2 justify-center rounded w-max px-4 py-1 absolute -top-8 left-42 lg:-top-4 lg:left-26 flex opacity-0 group-hover:opacity-100 lg:group-hover:-top-8 ease-in-out duration-200 after:content-[''] after:w-4 after:h-4 after:bg-inherit after:absolute after:rotate-45 after:-bottom-[8px]"
+              >To-Do App
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+
+            <img
+              class="max-w-[400px] mr-auto"
+              src="../assets/images/Todo.png"
+            />
+          </a>
+        </div>
+        <div
+          class="max-w-[500px] lg:w-full flex flex-col justify-center items-center"
+        >
+          <h3 class="text-lime-300 font-bold text-4xl">To-Do App</h3>
+          <span class="text-lime-300 text-lg">(Personal)</span>
+          <p class="text-justify mt-2">
+            Fully responsive To-Do App built with React.js, styled using
+            Tailwind CSS, and stores tasks persistently using Local
+            Storage.supports full CRUD (Create, Read, Update, Delete) operations
+            and includes a progress bar to visually track task completion.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #react.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #javascript
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #tailwind
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #css
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]">
+              #localstorage
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="w-[2px] bg-[#1788ae] absolute top-0 bottom-0 left-1/2 hidden lg:block"
+      ></div>
+    </section>
   </div>
 </template>
 
+<style>
+.animated-text {
+  display: inline-block;
+}
+.animated-text span {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s forwards;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
 <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const textElement = document.querySelector(".animated-text");
+  const text = textElement.innerText;
+  textElement.innerHTML = "";
+
+  text.split("").forEach((char, index) => {
+    let span = document.createElement("span");
+    span.innerText = char;
+    span.style.animationDelay = `${index * 0.1}s`;
+    textElement.appendChild(span);
+  });
+});
 export default {
   name: "Nav",
   data() {
@@ -1049,6 +1454,15 @@ export default {
   methods: {
     HandleClick() {
       this.flag = true;
+    },
+    showLatestWork() {
+      this.$emit("show-latest-work"); // Emit event to parent
+    },
+    HandleClick1() {
+      window.open(
+        "https://drive.google.com/file/d/1hFMPwx6XodoRyM2c-umTr0LTFzlugrDz/view?usp=drive_link",
+        "_blank"
+      );
     },
   },
 };

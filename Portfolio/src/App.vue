@@ -1,6 +1,6 @@
 <script>
-import LatestWork from "./components/LatestWork.vue";
 import Navbar from "./components/Navbar.vue";
+import LatestWork from "./components/LatestWork.vue";
 
 export default {
   components: {
